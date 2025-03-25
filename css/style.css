@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 8px;
+    position: fixed;
+    justify-content: center;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    
+} */
+span{
+    /* font-size: 4rem; */
+    color: yellow;
+    /* font-weight: bolder; */
+}
+
+.navlinks ul li a{
+    display: flex;
+    text-decoration: none;
+    word-spacing: 4px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.navlinks a:hover{
+        box-shadow: 0px 3px 12px 0px yellow;
+        border-radius: 100px;
+
+}
+
+.sidebar{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    justify-items: center;
+    left: 0%;
+    top: -100;
+    z-index: 10;
+    overflow: auto;
+    background: black;
+    color: white;
+
+}
+.avatar {
+    height: 200px;
+    width: 170px;
+    margin: auto;
+    background-image: url(../image/propic.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: yellow;;
+    
+}
+
+body{
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+    
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/portfolio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    margin-left: 300px;
+    color: white;
+    
+}
+
+.home button {
+    width: fit-content;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 60px;
+    background: transparent;
+    color:yellow;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.home button:hover{
+    box-shadow: 0px 3px 12px 0px yellow;
+    cursor: pointer;
+}
+
+.home p {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    font-size: 1.7rem;
+    word-spacing: 2px;
+}
+
+
+.bio{
+    min-height: 100vh;
+    width: -100%;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    margin-left: 300px;
+    text-align: justify;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    word-spacing: 1px;
+
+}
+
+.bio .para{
+    border-left: solid;
+    border-radius: 80px;
+    border-color: yellow;
+}
+
+.about h1{
+    font-size: 2rem;
+    padding: 20px;
+    margin-left: 60px;
+}
+.about img{
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    /* border-style: solid; */
+    border-color: yellow;
+    margin-left: 50px;
+}
+
+.para {
+    font-size: larger;
+    padding: 50px;
+
+}
+
+.background{
+    min-height: 100vh;
+    width: -100%;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    margin-left: 300px;
+    background-color: black;
+
+
+    
+}
+
+.bg h1{
+    padding: 20px;
+}
+
+.content{
+    padding: 0px 30px;
+    border-left: 5px solid;
+    border-color: yellow;
+    
+}
+
+.content .box{
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    border: 1px solid whitesmoke;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+.content .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    margin-left: 300px;
+    justify-content: center;
+    align-content: center;
+    width: -100%;
+    background-color: grey;
+
+}
+
+.services img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    
+}
+
+.services h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services{
+    display: flex;
+}
+
+.serv h1{
+    display: flex;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.expertise{
+    display: flex;
+    min-height: 100vh;
+    margin-left: 300px;
+    justify-content: center;
+    align-content: center;
+    width: -100%;
+    background-color: black;
+    color: white;
+}
+
+.specialty h1{
+    display: flex;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.skills{
+    display: flex;
+}
+
+.skills h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.skills img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    
+}
+
+.skills h2{
+    align-items: center;
+
+}
+
+.forms{
+    background-image: url(../images/contactpic.png);
+    height: 100vh;
+    
+}
+
+.contact-left{
+    flex-basis: 35%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color:black;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color: white;
+}
+
+.contact-right form{
+    width: 100%;
+    max-width: calc(100% - 300px); 
+    margin-left: 300px;
+    
+}
+
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 10px 0;color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+} */
+
+
+form button {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: black; /* Added a color for the button */
+    color: grey; /* Text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Matching the input radius */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+form button:hover {
+    background: rgb(245, 245, 50); /* Slightly darker on hover */
+}
+
+@media screen {
+
+
+    
+}
